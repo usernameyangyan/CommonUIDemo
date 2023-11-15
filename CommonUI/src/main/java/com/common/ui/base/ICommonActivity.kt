@@ -204,7 +204,7 @@ abstract class ICommonActivity : AppCompatActivity() {
      * @param layoutResID
      */
     private fun addContainerFrame(layoutResID: Int) {
-        val parent=findViewById<FrameLayout>(R.id.frame_caption_container)
+        val parent=findViewById<FrameLayout>(R.id.frame_content_container)
         bindingActivityLayout = LayoutInflater.from(this).inflate(layoutResID, parent, false)
         parent.addView(bindingActivityLayout)
     }
